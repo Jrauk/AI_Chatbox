@@ -1,12 +1,12 @@
 '''
-Doc to code for test function in tranlator.py
+Doc to code for test function in translator.py
 '''
 import unittest
 
 from translator import english_to_french 
 from translator import french_to_english
 
-class TestenglishToFrench(unittest.TestCase):
+class test_english_to_french(unittest.TestCase):
     '''tests the english to french translation'''
     def test_en2fr(self):
         '''here comes 4 tests 2 for asserteq 2 for assertNoteq'''
@@ -17,7 +17,7 @@ class TestenglishToFrench(unittest.TestCase):
         # test when word is given as input the output is translated.
         self.assertEqual(english_to_french('Road'), 'Route')
 
-class TestfrenchToEnglish(unittest.TestCase):
+class test_french_to_english(unittest.TestCase):
     '''tests the french to english translation'''
     def test_fr2en(self):
         '''here comes 4 tests 2 for asserteq 2 for assertNoteq'''
