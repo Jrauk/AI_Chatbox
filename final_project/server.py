@@ -11,14 +11,14 @@ app = Flask("Web Translator")
 @app.route('/translate_to_french')
 def translate_to_french():
     '''routes button translate to french'''
-    text_to_translate = request.args.get('textToTranslate')
+    text_to_translate = request.args.get('text_to_translate')
     english_text= translator.english_to_french(text_to_translate)
     return english_text
 
 @app.route('/translate_to_english')
 def translate_to_english():
     '''routes button translate to english'''
-    text_to_translate = request.args.get('textToTranslate')
+    text_to_translate = request.args.get('text_to_translate')
     french_text= translator.french_to_english(text_to_translate)
     return french_text
 
